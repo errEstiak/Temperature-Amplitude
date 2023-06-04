@@ -48,44 +48,6 @@ const calcTemperatureAmplitude = function(temps){
 console.log(temperatures);
 console.log(calcTemperatureAmplitude(temperatures));
 
-
-//PROBLEM 2
-// STATEMENT
-// instead of one array now the function will receive 2 arrays & all other functionalities will be same
-
-
-
-// SOLUTION
-// QUESTION
-// can a function receive 2 arrays together? : yes
-
-//TODO
-//merge two arrays
-
-const newCalcTemperatureAmplitude = function(t1, t2){
-
-    let temps = t1.concat(t2)
-    console.log(temps);
-
-    let min = temps[0];
-    let max = temps[0];
-
-    for(let i=0; i < temps.length; i++){
-        let currTemp = temps[i];
-
-        if(typeof currTemp !== "number") continue;
-
-        if(currTemp < min){
-            min = currTemp;
-        }
-        if(currTemp > max){
-            max = currTemp;
-        }
-    }
-    const amplitude = max - min;
-    return amplitude;
-}
-
 //PROBLEM 2
 // STATEMENT
 // instead of one array now the function will receive 2 arrays & all other functionalities will be same
