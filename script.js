@@ -48,7 +48,6 @@ const calcTemperatureAmplitude = function(temps){
 console.log(temperatures);
 console.log(calcTemperatureAmplitude(temperatures));
 
-
 //PROBLEM 2
 // STATEMENT
 // instead of one array now the function will receive 2 arrays & all other functionalities will be same
