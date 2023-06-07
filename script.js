@@ -81,8 +81,9 @@ const newCalcTemperatureAmplitude = function(t1, t2){
             max = currTemp;
         }
     }
-    const amplitude = max - min;
-    return amplitude;
+    // const amplitude = max - min;
+    // return amplitude;
+    return max-min
 }
 
 console.log(newCalcTemperatureAmplitude([2,3,4], [5,6,7]));
